@@ -1,0 +1,167 @@
+.header{
+    .header-top{
+        background-color: $color-white;
+        padding: 1.5rem 9%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            font-size: 2.5rem;
+            font-weight: bolder;
+            color:$color-black;
+            span{
+                color:$color-aqua;
+            }
+        }
+        .header-search{
+            width: 50rem;
+            height: 5rem;
+            border: $border;
+            overflow: hidden;
+            background-color: $color-white;
+            display: flex;
+            align-items: center;
+            border-radius: .5rem;
+            input{
+                font-size: 1.6rem;
+                padding: 0 1.2rem;
+                height: 100%;
+                width: 100%;
+                text-transform: none;
+                color:$color-black;
+                &:hover{
+                    color:$color-aqua;
+                }
+            }
+            label{
+                font-size: 2.5rem;
+                padding-right: 1.5rem;
+                color:$color-black;
+                cursor: pointer;
+                &:hover{
+                    color:$color-aqua;
+                }
+            }
+        }
+        .header-icons {
+            *{
+                font-size: 2.5rem;
+                margin-left: 1.5rem;
+                color:$color-black;
+                cursor: pointer;
+                &:hover{
+                    color:$color-aqua;
+                }
+            }
+            #search-btn{
+                display: none;
+            }
+        }
+    }
+    .header-navbar{
+        background-color: $color-aqua;
+        padding: 0 9%;
+        .navbar{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            a{  
+                text-align: center;
+                padding: 1.2rem;
+                font-size: 1.7rem;
+                color:$color-white;
+                &:hover{
+                    background-color: $color-black;
+                }
+            }
+        }
+    }
+    .header-navbar.active{
+        position: fixed;
+        top: 0;left: 0;right: 0;
+        z-index:1000;
+    }
+    .register-form,.login-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-white;
+        position: fixed;
+        top: -105%;left: 0;
+        z-index: 10000;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        form{
+            background-color: aliceblue;
+            border:$border;
+            width: 40rem;
+            padding: 2rem;
+            box-shadow: $box-shadow;
+            border-radius: .5rem;
+            margin: 2rem;
+        }
+        h3{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color:$color-black;
+            text-align: center;
+        }
+        span{
+            display: block;
+            font-size: 1.5rem;
+            padding-top: 1rem;
+        }
+        .box{
+            width: 100%;
+            margin: .7rem 0;
+            font-size: 1.6rem;
+            border:$border;
+            border-radius: .5rem;
+            padding: 1rem 1.2rem;
+            color:$color-black;
+            text-transform: none;
+        }
+        .checkbox{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding: 1rem 0; 
+            label{
+                font-size: 1.5rem;
+                color:$color-black; 
+                font-weight: 800;
+                cursor: pointer;
+            }
+        }
+        .btn{
+            text-align: center;
+            width: 100%;
+            margin: 1.5rem 0;
+        }
+        #register,#login{
+            display: inline-block;
+            padding-top: .8rem;
+            color:$color-black;
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover{
+                color:$color-aqua;
+            }
+        }
+        .close-btn{
+            position: absolute;
+            top: 1.5rem;right: 2.5rem;
+            font-size: 5rem;
+            color: $color-black;
+            cursor: pointer;
+        }
+    }
+    .login-form.active{
+        top: 0;
+    }
+    .register-form.active{
+        top: 0;
+    }
+}

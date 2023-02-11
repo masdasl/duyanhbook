@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Seymour+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding: 5rem;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: whitesmoke;
+  font-size: 3rem;
+  border-right: 0.2rem solid black;
+}
+
+header {
+  background-color: darkgray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  flex: 4;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+  color: whitesmoke;
+  font-size: 3.5rem;
+}
+
+main .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nav a {
+  text-decoration: none;
+  color: #363945;
+  border: 0.2rem solid black;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+}
+main .nav a:hover {
+  color: whitesmoke;
+  background-color: darkgray;
+}
+main .form-content {
+  padding: 0 4rem;
+  margin-top: 1.5rem;
+}
+main .form-content .admin-form {
+  border: 0.3rem solid black;
+  background-color: darkgray;
+}
+main .form-content .admin-form .product {
+  display: flex;
+  display: grid;
+  grid-template-columns: 10% 30% 20% auto auto auto;
+  border-bottom: 0.3rem solid black;
+}
+main .form-content .admin-form .product .img {
+  max-width: 9rem;
+  border-right: 0.2rem solid black;
+  margin-right: 1rem;
+}
+main .form-content .admin-form .product .img img {
+  width: 100%;
+  height: 100%;
+}
+main .form-content .admin-form .product .title {
+  border-right: 0.2rem solid black;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+main .form-content .admin-form .product .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+main .form-content .admin-form .product a {
+  border-left: 0.2rem solid black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(36, 29, 29);
+}
+main .form-content .admin-form .product a:hover {
+  color: whitesmoke;
+}
+
+.logout {
+  float: right;
+}
+.logout img {
+  width: 5rem;
+}
+
+.add_form {
+  width: 40rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  background-color: darkgray;
+}
+.add_form h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.7rem;
+  color: whitesmoke;
+}
+.add_form .box {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  padding-left: 1rem;
+  font-size: 2.5rem;
+}
+.add_form .btn {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+.add_form .btn:hover {
+  color: whitesmoke;
+  background-color: darkgray;
+}
+
+/* Responsive  */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*# sourceMappingURL=admin.css.map */

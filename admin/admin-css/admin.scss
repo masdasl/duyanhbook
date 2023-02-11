@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Seymour+One&display=swap");
+$border: .2rem solid black ;
+$darkgray:darkgray;
+$color-text:whitesmoke;
+*{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding: 5rem;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    color:$color-text;
+    font-size: 3rem;
+    border-right:$border ;
+}
+header{
+    background-color: $darkgray;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    h1{
+        flex:4;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem;
+        color:$color-text;
+        font-size: 3.5rem;
+    }
+}
+main{
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+        text-decoration: none;
+        color:#363945;
+        border: $border;
+        border-radius: 3rem;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        font-size: 3rem;
+        }
+        a:hover{
+            color:$color-text;
+            background-color: $darkgray;
+        }
+    }
+    .form-content{
+        padding: 0 4rem;
+        margin-top: 1.5rem;
+        .admin-form{
+            border: .3rem solid black ;
+            background-color: $darkgray;
+            .product{
+                display: flex;
+                display: grid;
+                grid-template-columns: 10% 30% 20% auto auto auto;
+                border-bottom: .3rem solid black ;
+                .img{
+                    max-width: 9rem;
+                    border-right: $border;
+                    margin-right: 1rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                       
+                    }
+                }
+                .title{
+                    border-right: $border;
+                    color:$color-text;
+                    font-size: 1.3rem;
+                    font-weight: bold;  
+                }
+                .price{
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    color:$color-text;
+                }
+                a{
+                    border-left: $border;
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:rgb(36, 29, 29);
+                }
+                a:hover{
+                    color: $color-text;
+                }
+            }
+        }
+    }
+}
+.logout{
+    float: right;
+    img{
+        width: 5rem;
+    }
+}
+@import 'addForm';
+
+/* Responsive  */
+@media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }

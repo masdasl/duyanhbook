@@ -1,0 +1,91 @@
+.home{
+    margin-bottom: 2rem;
+    .banner{
+        max-width: 1366px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .book-slider{
+        a{
+            max-width: 1366px;
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: 493px;
+            }
+        }
+    }
+    .icons-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        gap: 1.5rem;
+        text-align: center;
+        padding: 2rem 0;
+        .icons {
+            i{
+                font-size: 3.5rem;
+                color: $color-aqua;
+            }
+            h3{
+                font-size: 2.2rem;
+                color: $color-black;
+                padding-bottom: .5rem;
+            }
+            p{
+                font-size: 1.8rem;
+                color:$color-black;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        text-align: center;
+       .list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 2rem;
+        gap:1rem;
+        .product{
+            .img{
+                max-width: 17.7rem;
+                max-width: 17.7rem;
+                margin-bottom: .7rem;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+                .title{
+                    font-size: 1.4rem;
+                    max-width: 17.7rem;
+                }
+                .price{
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                }
+        }
+    }
+       }
+    .list-page{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        li{
+            background-color: aqua;
+            font-size: 1.8rem;
+            margin-right: 1rem;
+            cursor: pointer;
+            padding: .5rem;
+        }
+    }   
+}

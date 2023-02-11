@@ -1,0 +1,33 @@
+.footer{
+    &-container{
+        background-color: $color-aqua;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        gap: 1.5rem;
+        .box{
+            text-transform: uppercase;
+            h3{
+                font-size: 2.2rem;
+                color:$color-white;
+                padding: 1rem 0;
+            }
+            a{
+                display: block;
+                font-size: 2rem;
+                color:$color-white;
+                font-weight: bold;
+                padding: 1rem 0;
+                i{
+                    color:$color-white;
+                    padding-right: .5rem;
+
+                }
+                &:hover{
+                    i{
+                        padding-right: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
