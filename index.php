@@ -30,6 +30,9 @@ if((isset($_POST['dangky']))&&($_POST['dangky'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookStore</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -45,7 +48,7 @@ if((isset($_POST['dangky']))&&($_POST['dangky'])){
             <div class="header-icons">
                 <div id="search-btn" class="fa-solid fa-magnifying-glass"></div>
                 <a href="#" class="fa-regular fa-heart"></a>
-                <a href="#" class="fas fa-cart-shopping"></a>
+                <a href="index.php?page=shop_cart" class="fas fa-cart-shopping"></a>
                 <div class="fa-regular fa-user" id="login-btn"></div>
             </div>
         </div>

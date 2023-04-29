@@ -13,6 +13,8 @@ if(isset($_GET['page'])) {
             include("TLH.php");break;
         case 'SGK':
             include("SGK.php");break;
+        case 'shop_cart':
+            include("shop_cart.php");break;
         default:
             include("home.php");
     }
