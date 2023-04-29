@@ -17,8 +17,22 @@ if(isset($_GET['ad'])) {
                     header('location: index.php?ad=use');
                 }
                 break;
+            case 'del_bill':
+                include("function_del.php");
+                if(isset($_GET['id_bill'])){
+                    $id_bill = $_GET['id_bill'];
+                    delbill($id_bill);
+                    header('location: index.php?ad=bill');
+                }
+                break;
         case 'use':
             include("user.php");
+            break;
+        case 'bill':
+            include("bill.php");
+            break;
+        case 'chitietbill':
+            include("chitietbill.php");
             break;
         case 'add':
             include("add.php");

@@ -2,6 +2,7 @@
         <div class="nav">
         <a class="center" href="index.php">Sản phẩm</a>
         <a class="center" href="index.php?ad=use">người dùng</a>
+        <a class="center" href="index.php?ad=bill">Bill</a>
         </div>
         <div class="form-content">
             <form action="" class="admin-form">

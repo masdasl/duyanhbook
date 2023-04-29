@@ -10,4 +10,9 @@ function del_use($id_user){
     $sql ="DELETE  FROM tbl_user WHERE id_user=".$id_user;
     $conn->exec($sql);
 }
+function delbill($id_bill){
+    $conn = connectdb();
+    $sql ="DELETE  FROM tbl_bill WHERE id_bill=".$id_bill;
+    $conn->exec($sql);
+}
 ?>

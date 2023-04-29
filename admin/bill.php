@@ -2,23 +2,22 @@
         <div class="nav">
         <a class="center" href="index.php">Sản phẩm</a>
         <a class="center" href="index.php?ad=use">người dùng</a>
-          <a class="center" href="index.php?ad=bill">Bill</a>
+        <a class="center" href="index.php?ad=bill">Bill</a>
         </div>
         <div class="form-content">
             <form action="" class="admin-form">
                 <?php 
                 include("show.php");
-                $datas = show_tk();
+                $datas = show_donhang();
                   foreach($datas as $row){ ?>
-                <div class="product">
+               <div class="product">
                     <div class="center" style="color:whitesmoke;font-size:1.4rem;border-right: .2rem solid black ;">
-                        <?=$row['role']==1 ? 'admin': 'user'?>
+                        <?=$row['id_bill']?>
                     </div>
-                    <div class="text center"><?=$row['user']?></div>
-                    <div class="text center"><?=$row['password']?> </div>
-                    <a href="index.php?ad=add_user" class="center">Thêm</a>
-                    <a href="" class="center">Sửa</a>
-                    <a href="index.php?ad=del_use&id_user=<?=$row['id_user']?>" class="center">Xóa</a>
+                    <div class="text center"><?=$row['diachi']?></div>
+                    <div class="text center"><?=$row['total']?>.000</div>
+                    <a href="index.php?ad=chitietbill&idbill=<?=$row['id_bill']?>" class="center">Chitiet</a>
+                    <a href="index.php?ad=del_bill&id_bill=<?=$row['id_bill']?>" class="center">Chốt đơn</a>
                 </div>
                 <?php }?>
             </form>
